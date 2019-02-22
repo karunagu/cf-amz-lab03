@@ -5,12 +5,13 @@ if (user === null){
 }
 alert('Hi '+ user +'! Thanks for visiting my home page');
 var guess = prompt ('Are you ready to guess about me (Y/N)?');
-console.log ('Guess (Y/N) : ', guess);
+/*console.log ('Guess (Y/N) : ', guess);*/
+consoledisplay('Guess (Y/N) : ', guess);
 var correct = 0;
 var total = 0;
 if (guess === 'Y' || guess === 'y' ) {
     var drink = prompt ('What is my favorite Drink?');
-    console.log ('Drinks : ', drink);
+    consoledisplay('Drinks : ', drink);
     total++;
     if (drink.toLowerCase() === 'pepsi'){
         alert ('Yes, You are correct, my favorite drink is '+ drink);
@@ -20,7 +21,7 @@ if (guess === 'Y' || guess === 'y' ) {
         alert ('Sorry, it is incorrect!  Please try next guess')
     }
     var sports = window.prompt ('What is my favorite sports?');
-    console.log ('Sports : ', sports);
+    consoledisplay ('Sports : ', sports);
     total++;
     if (sports.toLowerCase() === 'cricket'){
         alert ('Yes, you are correct, my favorite sports is '+ sports);
@@ -30,7 +31,7 @@ if (guess === 'Y' || guess === 'y' ) {
         alert ('Sorry, it is incorrect!  Please try next guess')
     }
     var script_language = prompt ('What is my favorite scripting language?');
-    console.log ('Scripting Language : ', script_language);
+    consoledisplay ('Scripting Language : ', script_language);
     total++;
     if (script_language.toLowerCase() === 'javascript'){
         alert ('Yes, you are correct, my favorite Scripting Language is '+ script_language);
@@ -40,7 +41,7 @@ if (guess === 'Y' || guess === 'y' ) {
         alert ('Sorry, it is incorrect!  Please try next guess')
     }
     var experience = prompt ('What is my total years of experience?');
-    console.log ('Experience : ', experience);
+    consoledisplay ('Experience : ', experience);
     total++;
     if (parseInt(experience) >= 10 && parseInt(experience) <= 15){
         alert ('Yes, you are correct, I have 10+ years of experience ');
@@ -79,7 +80,7 @@ if (guess === 'Y' || guess === 'y' ) {
         numtimes++;
     }
 }
-    console.log('Total number of guesses until you got it:', numtimes);
+    consoledisplay('Total number of guesses until you got it:', numtimes);
     alert('Hi '+ user +'It took '+ numtimes+ ' guesses until you got it ');
 
     var birds = ['eagle', 'crow', 'peacock', 'parrot', 'woodpecker'];
@@ -87,7 +88,7 @@ if (guess === 'Y' || guess === 'y' ) {
     var flag = false;
 
 for (var i = 0; i < birds.length; i++) {
-    console.log('Current iteration:', birds[i]);
+    consoledisplay('Current iteration:', birds[i]);
 
     if (fav_bird === birds[i].toLowerCase()) {
         alert('Yes, it is right!');
@@ -102,3 +103,18 @@ if (!flag) {
 else {
     alert('Hi '+ user +'! No problem, try again later');
 }
+
+function consoledisplay(text,value){
+    console.log(text,value);
+    
+    }
+  
+  
+  
+  
+  
+
+
+
+
+
