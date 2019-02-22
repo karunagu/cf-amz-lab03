@@ -81,6 +81,23 @@ if (guess === 'Y' || guess === 'y' ) {
 }
     console.log('Total number of guesses until you got it:', numtimes);
     alert('Hi '+ user +'It took '+ numtimes+ ' guesses until you got it ');
+
+    var birds = ['eagle', 'crow', 'peacock', 'parrot', 'woodpecker'];
+    var fav_bird = prompt('What is one of my favorite birds?');
+    var flag = false;
+
+for (var i = 0; i < birds.length; i++) {
+    console.log('Current iteration:', birds[i]);
+
+    if (fav_bird === birds[i].toLowerCase()) {
+        alert('Yes, it is right!');
+        flag = true;
+        break;
+    }
+}
+if (!flag) {
+    alert('incorrect guess - try again');
+}
 }
 else {
     alert('Hi '+ user +'! No problem, try again later');
